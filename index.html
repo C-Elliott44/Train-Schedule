@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta lang="en">
+    <title>practice bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <!-- this is the heading of the page -->
+<div class="container">    
+    <div class="row">   
+        <div class="col-1">
+
+        </div>
+        <div class="jumbotron col-10" id="jumbotron">
+            <div class="container" id="jumbotron-text">
+            <h1 class="display-4 text-center" id="jumbotron-title">Train Schedule</h1>
+            <p class="lead text-center" id="jumbotron-subtext">Time may vary depending on delays</p>
+            </div>
+        </div>
+        <div class="col-1">
+            
+        </div>
+    </div> 
+    <!-- This is the place that the rains schedules will be displayed -->
+    <div class="row">
+        <div class="col-1">
+
+        </div>
+        <div class="col-10 m-0 p-0 mb-4" id="train-schedule">
+            <div class="card">
+                <div class="card-header">
+                    Add Train
+                </div> 
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequwncy (min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody id="train-chart">
+                        <!--Table row will get OPENED here-->
+                            <!--Table data will get appened here-->
+                        <!--Table row will get CLOSED here-->
+                    </tbody>
+                </table>
+            </div>
+        </div>    
+        <div class="col-1">
+
+        </div>
+    </div>
+    <!-- This is where the adding a train will go -->
+    <div class="row">
+        <div class="col-1">
+
+        </div>
+        <div class="col-10 m-0 p-0">
+            <div class="card">
+                <div class="card-header">
+                    Add Train
+                </div> 
+                <form class="m-3">
+                    <div class="form-group">
+                        <label for="train-name">Train Name</label>
+                        <input type="text" class="form-control" id="train-name" placeholder="Train Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input type="text" class="form-control" id="destination" placeholder="Destination">
+                    </div>
+                    <div class="form-group">
+                        <label for="train-time">First Train Time (HH:mm - military time)</label>
+                        <input type="text" class="form-control" id="train-time" placeholder="HH:mm - military time">
+                    </div>
+                    <div class="form-group">
+                        <label for="frequency">Frequency (min)</label>
+                        <input type="text" class="form-control" id="frequency" placeholder="Frequency">
+                    </div>
+                    <button type="submit" class="btn btn-outline-secondary" id="add-train">Add Train</button>
+                </form>
+            </div>
+        </div>    
+        <div class="col-1">
+
+        </div>
+    </div>
+</div>    
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
